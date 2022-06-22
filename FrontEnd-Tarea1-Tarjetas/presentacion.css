@@ -1,0 +1,266 @@
+body{
+    background-color: antiquewhite;
+    margin-top: 3rem;
+}
+
+.superContenedor{
+    box-shadow: 0px 0px 10px 1px rgb(9, 67, 90);
+    border-radius: 25px;
+    width: 97%;
+    background-color: rgb(170, 197, 206);
+    height: fit-content;
+    margin: auto;
+    padding:0.7rem;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "tarjeta1 tarjeta1"
+                         "tarjeta2 tarjeta3"
+                         "tarjeta4 tarjeta5";
+}
+
+.contenedorGeneral{
+    box-shadow: 0px 0px 10px 1px #ccc;
+    border-radius: 25px;
+    width: 96%;
+    background-color: rgb(40, 89, 104);
+    height: fit-content;
+    margin: auto;
+    padding: 1rem;
+    grid-area: tarjeta1;
+    display: grid;
+    grid-template-columns: 30% 35% 35%;
+    grid-template-areas: "Col1 Titulo Titulo"
+                         "Col1 Presentacion Presentacion"
+                         "Col1 Datos Tecnologias"
+                         "Col1 Educacion Experiencia"
+                         "Col1 Referencias Referencias";
+}
+
+.contenedorPeque{
+    background-color: rgb(40, 89, 104);
+    border-radius: 25px;
+    width: 98%;
+    height: fit-content;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    padding-top: 0.6rem;
+    padding-bottom: 1.2rem; 
+}
+
+.tituloPresentacion2{
+    color: rgb(255, 255, 255);
+    background-color: rgb(24, 67, 80);
+    border: 2px solid rgb(24, 67, 80);
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    grid-area: titulo;
+    width: 100%;
+    height: 2rem;
+    margin: auto;
+    padding-top: 0.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.contendidoPeque{
+    grid-area: contenido;
+    width: 95%;
+    height: 18rem;
+    margin: auto;
+    border-radius: 30px;
+    background-color: rgb(248, 243, 236);
+    color: #777;
+}
+
+.contendidoPeque img{
+    grid-area: contenido;
+    width: 120px;
+    height: 120px;
+    margin: auto;
+    background-color: rgb(248, 243, 236);
+    padding: 0.8rem;
+}
+
+.tituloPresentacion2 label{
+    font-size: 20px;
+}
+
+.contTarjeta2{
+    grid-area: tarjeta2;
+    margin-top: 1rem;
+    height: fit-content;
+}
+
+.contTarjeta3{
+    grid-area: tarjeta3;
+    margin-top: 1rem;
+    height: fit-content;
+}
+
+.contTarjeta4{
+    grid-area: tarjeta4;
+    margin-top: 1rem;
+    height: fit-content;
+}
+
+.contTarjeta5{
+    grid-area: tarjeta5;
+    margin-top: 1rem;
+    height: fit-content;
+}
+
+img{
+    height: 60%;
+    width: 80%;
+    margin-top: 25%;
+}
+
+.nomCelda{
+    text-align: center;
+    grid-area: nomCel;
+    color: rgb(24, 67, 80);
+    font-size: 20px;
+}
+
+.datoCelda{
+    text-align: justify;
+    grid-area: datosCel;
+    padding: 0.5rem;
+    padding-bottom: 0px;
+    color: rgb(107, 107, 107);
+}
+
+.contenedorFoto {
+    border: 3.5px solid #ccc;
+    background-color:antiquewhite;
+    width: 10rem;
+    height: 13rem;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 20%;
+    margin-bottom: 15%;
+  }
+
+header{
+    font-size: 2rem;
+}
+
+.celdasT1{
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    color: #777;
+    background-color:rgb(248, 243, 236);
+}
+
+.columna1{
+    color: rgb(255, 255, 255);
+    background-color: rgb(50, 110, 128);
+    border: 2px solid rgb(50, 110, 128);
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+    grid-area: Col1;
+    
+}
+
+.tituloPresentacion{
+    color: rgb(255, 255, 255);
+    background-color: rgb(24, 67, 80);
+    border: 2px solid rgb(24, 67, 80);
+    border-top-right-radius: 25px;
+    grid-area: Titulo;
+}
+
+
+
+
+.presentacionP{
+    border: 2px solid #ccc;
+    height: fit-content;
+    grid-area: Presentacion;
+    display: grid;
+    grid-template-rows: 25% 75%;
+    grid-template-areas: "nomCel"
+                         "datosCel";
+}
+
+.datosP{
+    border: 2px solid #ccc;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    grid-area: Datos;
+}
+
+.tecnologiasP{
+    border: 2px solid #ccc;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    grid-area: Tecnologias;
+}
+
+.educacionP{
+    border: 2px solid #ccc;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    grid-area: Educacion;
+}
+
+.experienciaP{
+    border: 2px solid #ccc;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    grid-area: Experiencia;
+}
+
+.referenciasP{
+    border: 2px solid #ccc;
+    border-bottom-right-radius: 25px;
+    grid-area: Referencias;   
+}
+
+.seccionBotones{
+    width: 90%;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "bt1 bt2";
+  }
+
+.botones{
+    width: 19rem;
+    height: 3rem;
+    border-radius: 100px;
+    color:#fff;
+    text-align: center;
+    margin: auto;
+    margin-left: 25%;
+    transition: 0.5s;
+}
+
+.azul{
+      border:3px solid rgb(40, 89, 104);
+      background-color: rgb(50, 110, 128);
+      grid-area: bt1;
+  } 
+  
+.rosa{
+    border:3px solid rgb(104, 40, 96);
+    background-color: rgb(151, 47, 137);
+    grid-area: bt2;
+  } 
+  
+.botones:hover{
+      cursor:pointer;
+      width: 20rem;
+      height: 3.5rem;
+      transition: 0.5s;
+  }
