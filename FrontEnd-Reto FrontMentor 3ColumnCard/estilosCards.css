@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+
+/*todito*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+/* variables de colores */
+:root {
+  --naranjita: hsl(31, 77%, 52%);
+  --verdecito: hsl(184, 100%, 22%);
+  --verdecitoOscuro: hsl(179, 100%, 13%);
+  --gris: hsla(0, 0%, 100%, 0.75);
+  --blanquito: hsl(0, 0%, 95%);
+  --grisFuerte: #999;
+  --grisOscuro: #555;
+  --negro: #000;
+}
+
+
+body {
+  font-family: "Lexend Deca", sans-serif;
+  background-color: var(--blanquito);
+  font-size: 25px;
+  overflow: hidden;
+  display: flex;
+  height: 100vh;
+  overflow: auto;
+  color: var(--gris);
+}
+
+/*contenedor cards*/
+.contenedorCards {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  max-width: 22rem;
+  height: 35rem;
+  padding: 42px;
+  position: relative;
+}
+
+.sedan {
+  background-color: var(--naranjita);
+  border-radius: 7px 0 0 7px;
+}
+
+.suv {
+  background-color: var(--verdecito);
+}
+
+.luxury {
+  background-color: var(--verdecitoOscuro);
+  border-radius: 0 7px 7px 0;
+}
+
+img {
+  margin-bottom: 36px;
+}
+
+h1 {
+  font-family: "Big Shoulders Display", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  color: var(--blanquito);
+  margin-bottom: 1.5rem;
+}
+
+.card p {
+  color: var(--gris);
+  font-size: 13.8px;
+  line-height: 1.5rem;
+}
+
+button {
+  position: absolute;
+  cursor: pointer;
+  text-align: center;
+  display: inline-block;
+  padding: 14px;
+  width: 146px;
+  border-radius: 25px;
+  outline: none;
+  border: 2px solid var(--blanquito);
+  font-family: inherit;
+  transition: all 0.2s ease-in-out;
+  bottom: 42px;
+}
+
+.sedan button {
+  background: var(--blanquito);
+  color: var(--naranjita);
+}
+
+.suv button {
+  background-color: var(--blanquito);
+  color: var(--verdecito);
+}
+
+.luxury button {
+  background-color: var(--blanquito);
+  color: var(--verdecitoOscuro);
+}
+
+button:hover {
+  background-color: transparent;
+  color: var(--blanquito);
+}
+
+button:active {
+  transform: scale(0.9);
+}
+
+/* style footer */
+
+.footerClass {
+  width: 100%;
+  margin: 0 auto;
+  position: absolute;
+  color: var(--grisFuerte);
+  bottom: 10px;
+  font-size: 0.75rem;
+  line-height: 20px;
+  text-align: center;
+}
+
+.footerClass a {
+  text-decoration: none;
+  color: var(--grisOscuro);
+}
+
+.footerClass a:hover {
+  color: var(--negro);
+}
+
+/* style tablet and mobile */
+
+@media only screen and (max-width: 844px) {
+  body {
+    display: flex;
+    width: 100%;
+    overflow: scroll;
+    flex-wrap: wrap;
+  }
+
+  .contenedorCards {
+    padding: 50px 0;
+    flex-direction: column;
+  }
+
+  .sedan {
+    border-radius: 7px 7px 0 0;
+  }
+
+  .luxury {
+    border-radius: 0 0 7px 7px;
+  }
+
+  .card p {
+    font-size: 0.77rem;
+  }
+
+}
